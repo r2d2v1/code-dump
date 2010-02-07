@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>THESIS</title>
+  <text xml:space="preserve"><note-content version="0.1">THESIS
+
+1. chen proj update-3 papers read
+
+2. data load into trie
+ajax links
+
+3. jain proj update.
+
+4. chen ask thesis topic + readup
+
+5.
+
+ </note-content></text>
+  <last-change-date>2009-11-28T22:41:50.4045620-08:00</last-change-date>
+  <last-metadata-change-date>2009-11-28T22:41:50.4045620-08:00</last-metadata-change-date>
+  <create-date>2009-11-15T02:27:21.0290290-08:00</create-date>
+  <cursor-position>0</cursor-position>
+  <width>450</width>
+  <height>360</height>
+  <x>774</x>
+  <y>209</y>
+  <tags>
+    <tag>system:notebook:GARUDAX</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

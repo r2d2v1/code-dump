@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>MITRA</title>
+  <text xml:space="preserve"><note-content version="0.1">MITRA
+
+1. <link:internal>45 days</link:internal>
+jul 1: going good
+
+2. <link:internal>Programming</link:internal>
+jul 1: dive into python,c++ book =&gt;half way.<link:broken>TODO</link:broken>:start courses,plan
+
+ 
+3. <link:broken>Chen li - </link:broken><link:internal>thesis</link:internal>
+jul 1:worst improvement.<highlight> Friday deadline</highlight>
+
+
+
+c++,java,python  infomation retrieval,</note-content></text>
+  <last-change-date>2009-11-28T22:41:50.3848310-08:00</last-change-date>
+  <last-metadata-change-date>2009-11-28T22:41:50.3848310-08:00</last-metadata-change-date>
+  <create-date>2009-06-20T02:06:24.4557620-07:00</create-date>
+  <cursor-position>183</cursor-position>
+  <width>488</width>
+  <height>553</height>
+  <x>666</x>
+  <y>201</y>
+  <tags>
+    <tag>system:notebook:undeletable</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

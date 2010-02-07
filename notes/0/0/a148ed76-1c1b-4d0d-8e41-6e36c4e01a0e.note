@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>mitra Notebook Template</title>
+  <text xml:space="preserve"><note-content version="0.1">mitra Notebook Template
+
+Describe your new note here.</note-content></text>
+  <last-change-date>2009-07-04T02:09:07.3153020-07:00</last-change-date>
+  <last-metadata-change-date>2009-07-04T02:09:07.3153020-07:00</last-metadata-change-date>
+  <create-date>2009-07-04T02:09:07.2876300-07:00</create-date>
+  <cursor-position>53</cursor-position>
+  <width>0</width>
+  <height>0</height>
+  <x>-1</x>
+  <y>-1</y>
+  <tags>
+    <tag>system:template</tag>
+    <tag>system:notebook:mitra</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

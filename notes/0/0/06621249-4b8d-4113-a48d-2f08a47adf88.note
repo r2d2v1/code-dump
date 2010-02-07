@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>mysql commands</title>
+  <text xml:space="preserve"><note-content version="0.1">mysql commands
+
+mysql -u root -p 
+synapse
+<link:url>http://www.pantz.org/software/mysql/mysqlcommands.html</link:url>
+
+mysqladmin -u root password pubmed
+
+Changing mysql data directory: <link:broken>AppArmor</link:broken>
+<link:url>http://www.ubuntugeek.com/how-to-change-the-mysql-data-default-directory.html</link:url>
+
+ grep mysql <link:url>/var/log/daemon.log</link:url>
+
+changing to root user  in my.cnf worked
+<link:url>http://ubuntuforums.org/archive/index.php/t-928445.html</link:url>
+
+gedit  <link:url>/etc/apparmor.d/usr.sbin.mysqld</link:url>
+
+<link:url>/etc/init.d/apparmor</link:url> reload
+
+gedit <link:url>/etc/mysql/my.cnf</link:url>
+
+choqn mysql:mysql <link:url>/media/orange/mysql_data</link:url>
+
+<link:url>/etc/init.d/mysql</link:url> restart
+
+
+
+</note-content></text>
+  <last-change-date>2010-01-26T04:01:38.9920260-08:00</last-change-date>
+  <last-metadata-change-date>2010-01-26T04:01:38.9920260-08:00</last-metadata-change-date>
+  <create-date>2010-01-12T17:04:17.2117000-08:00</create-date>
+  <cursor-position>476</cursor-position>
+  <width>398</width>
+  <height>486</height>
+  <x>665</x>
+  <y>265</y>
+  <open-on-startup>False</open-on-startup>
+</note>

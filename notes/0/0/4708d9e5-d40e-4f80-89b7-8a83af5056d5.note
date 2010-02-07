@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Courses to do</title>
+  <text xml:space="preserve"><note-content version="0.1">Courses to do
+
+1. <link:url>http://bnrg.cs.berkeley.edu/~adj/cs16x/</link:url>
+
+&gt;hadoop,p2p,svn
+
+2. uci information retrieval
+
+umass
+<link:url>http://ciir.cs.umass.edu/cmpsci646/</link:url>
+
+3.java <link:internal>programming</link:internal>
+
+<link:url>http://inst.eecs.berkeley.edu/~cs61b/fa07/index.html</link:url>
+
+<link:url>http://www-inst.eecs.berkeley.edu/~cs61b/sp06/lectures/index.html</link:url>
+
+java intro:by examples-lite
+<link:url>http://www.dcs.qmul.ac.uk/~mmh/DCS128/notes/new_index.html</link:url>
+<link:url>http://www.dcs.qmul.ac.uk/~mmh/ItP/resources/index.html</link:url>
+
+4.<link:internal>programming</link:internal> workshop -caltech
+<link:url>http://www.cs.caltech.edu/courses/cs11/</link:url>
+<link:url>http://www.cs.caltech.edu/courses/cs11/material/advcpp/index.html</link:url>
+<link:url>http://www.cs.caltech.edu/courses/cs11/material/java/donnie/</link:url>
+<link:url>http://www.cs.caltech.edu/courses/cs11/material/python/index.html</link:url>
+<link:url>http://www.cs.caltech.edu/courses/cs11/material/python/index.html</link:url>
+<link:url>http://www.cs.caltech.edu/courses/cs11/material/cpp/donnie/index.html</link:url>
+
+5.<link:internal>programming</link:internal> languages
+<link:url>http://www.cs.utexas.edu/~shmat/courses/cs345_spring08/</link:url>
+
+
+
+</note-content></text>
+  <last-change-date>2009-07-07T22:51:34.1273430-07:00</last-change-date>
+  <last-metadata-change-date>2009-11-28T22:39:05.8882900-08:00</last-metadata-change-date>
+  <create-date>2009-06-25T04:48:54.9630510-07:00</create-date>
+  <cursor-position>104</cursor-position>
+  <width>613</width>
+  <height>360</height>
+  <x>545</x>
+  <y>313</y>
+  <tags>
+    <tag>system:notebook:mitra</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

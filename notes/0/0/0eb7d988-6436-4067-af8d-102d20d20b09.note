@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Apache config backup</title>
+  <text xml:space="preserve"><note-content version="0.1">Apache config backup
+
+&lt;<link:broken>VirtualHost</link:broken> 127.0.0.1:80&gt;
+	<link:broken>ServerName</link:broken> localhost
+	<link:broken>ServerAdmin</link:broken> webmaster@localhost
+
+	<link:broken>DocumentRoot</link:broken>  <link:url>/home/vijay/moz_downloads/fcgi-2.4.0/examples</link:url>
+#	&lt;Directory /&gt;
+#		Options +ExecCGI  <link:broken>FollowSymLinks</link:broken>
+#		<link:broken>AllowOverride</link:broken> None
+#		<link:broken>AddHandler</link:broken> fastcgi-script fcgi cgi
+#	&lt;/Directory&gt;
+#	&lt;Directory  <link:url>/home/vijay/moz_downloads/fcgi-2.4.0/examples/</link:url>&gt;
+#		Options +ExecCGI  Indexes <link:broken>FollowSymLinks</link:broken> <link:broken>MultiViews</link:broken>
+#		<link:broken>AllowOverride</link:broken> None
+#		<link:broken>AddHandler</link:broken> fastcgi-script fcgi cgi
+#		Order allow,deny
+#		allow from all
+#	&lt;/Directory&gt;
+
+	#<link:broken>ScriptAlias</link:broken> /cgi-bin/  <link:url>/home/vijay/moz_downloads/fcgi-2.4.0/examples/new/</link:url>
+	&lt;Directory /&gt;
+		<link:broken>AllowOverride</link:broken> None
+		Options +ExecCGI -<link:broken>MultiViews</link:broken> +<link:broken>SymLinksIfOwnerMatch</link:broken>
+		<link:broken>AddHandler</link:broken> fastcgi-script fcgi cgi
+		Order allow,deny
+		Allow from all
+	&lt;/Directory&gt;
+
+	<link:broken>ErrorLog</link:broken> <link:url>/var/log/apache2/error.log</link:url>
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	<link:broken>LogLevel</link:broken> warn
+
+	<link:broken>CustomLog</link:broken> <link:url>/var/log/apache2/access.log</link:url> combined
+
+    Alias /doc/ "<link:url>/usr/share/doc/</link:url>"
+    &lt;Directory "<link:url>/usr/share/doc/</link:url>"&gt;
+        Options Indexes <link:broken>MultiViews</link:broken> <link:broken>FollowSymLinks</link:broken>
+        <link:broken>AllowOverride</link:broken> None
+        Order deny,allow
+        Deny from all
+        Allow from 127.0.0.0/255.0.0.0 ::1/128
+    &lt;/Directory&gt;
+
+&lt;/<link:broken>VirtualHost</link:broken>&gt;</note-content></text>
+  <last-change-date>2009-11-28T22:36:26.5456180-08:00</last-change-date>
+  <last-metadata-change-date>2009-11-28T22:39:59.4583090-08:00</last-metadata-change-date>
+  <create-date>2009-11-23T02:37:46.9286050-08:00</create-date>
+  <cursor-position>684</cursor-position>
+  <width>450</width>
+  <height>360</height>
+  <x>4</x>
+  <y>387</y>
+  <tags>
+    <tag>system:notebook:undeletable</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Slide 6:</title>
+  <text xml:space="preserve"><note-content version="0.1">Slide 6:
+
+Semantic Gap: 
+Semantic Gap is the lack of coincidence between the information that one can extract from visual data and interpretation that it has in a given situation.
+Text information is contextual ,whereas the image can have a life to itself.
+Web Search-&gt; 3 stages of evolution
+Document Web
+Multimedia Web
+Event Web -&gt; live multimedia and sensors
+Information and Insight
+Insight-&gt; visualization, Experiential Environments
+Information -&gt; Current Databases, Search Engines
+Looking for Information
+Specificity-&gt;Database
+Exhautive-&gt; IR
+Database, IR, Experiential Env.
+basic goal -&gt; provide data, info sources, Insights
+Data Type -&gt; Alphanumeric, Text/Documents , Multimedia
+User's query-&gt;SQL,keywords,WYSIWYG
+System Provider-&gt; Data records, Pointer List, Related Media
+Retrieval Method-&gt; Deterministic, Probablistic, Hybrid
+Success Criterion-&gt; Efficiency, Utility , User Satisfaction
+Arch of DB-&gt; Internal, conceptual ,&amp; external
+IR-&gt;unstructured data, catalog-&gt;index
+Typical Search System
+Evaluation Measures-&gt; Effectiveness VS Efficiency
+Precision &amp; Recall
+Inverted Files, boolean queries
+Recall Rate=n/N, n-&gt;retrieved relavant, N-&gt;total relevant
+Precision Rate=n/K, n-&gt;retrieved relevant , K-&gt;top-k
+Trade recall for precision vice versa
+Ranked Query -&gt; Similarity measure, vector model-&gt; favor long,less common words
+relevance Feedback -&gt; iterative Queries, user points to positive n negative examples
+
+
+Semantics in Multimedia
+Operations : Search-&gt; define similarity and range (degree of match)
+Operations: Browser-&gt; exploratory: general info on a topic
+Operations: Construct Solutions
+Seq. apply constraints and reduce search space
+Incremental queries
+Operations: Summerize
+Prepare summary/statistics to observe dynamics of large data
+
+Research in MIR-&gt;image, GIS, data, audio,video
+Features in Images
+Low level -&gt; Based on image characteristics
+Mid Level -&gt; Based on groupings; Use world knowledge
+High Level -&gt; Domain dependant 
+VIMSYS model???
+
+Research in Image DB
+CBIR-&gt; query by image
+Relevance feedback
+Global Features
+Color Histograms
+Texture
+Shape
+Color Indexing-&gt; Average  (r,g,b) coordinates
+k-element histogram
+color pairs
+distance by quadratic fn
+first, simple to kick out false hits,then check with complex fn
+Color Characteristics
+Primary colors/
+ hue,saturation, brightness(luminance)
+other color spaces
+Perceived color-&gt; quantized
+commonly used colors are regions in color space
+number of regions used in color space is subjective and application dependant 
+Hue-&gt; dominant wavelength in spectral dist
+Saturation-&gt; magnitude of Hue relative to others
+Brightness-&gt;overall amt of light
+Color Histograms to represent image
+N bins-&gt; each point classified to a bin-&gt;prepare color histogram 
+Comparing Histograms
+L1 distance
+L2 distance
+Quadratic Distance-&gt; correlation matrix
+Color Coherence Vectors -
+degree to which pixels of a color are members of a large similarly colored region. Large similarly colored regions are coherent regions.
+color histogram comparison done separately on coherent/ incoherent color pixels
+region based comparisons
+Texture
+spatial dist of gray levels in a neighborhood.
+depends in resolution
+Texture characterization Methods
+Gray level co-occurrence matrices-&gt;2d histogram
+Fractal Dimensions
+Fourier domain methods
+Wavelets
+Texture Characteristics
+Directionality
+Periodicity
+Contrast
+Scale
+Distance btw two textures is weighted distances among these components
+Shape
+characterizes shape of complete object
+useful -&gt;when no occlusion
+Well developed tools:
+moments
+Fourier Descriptors
+Local Shape
+Useful when occlusion is common
+well studied in CV
+Use local features and relations among them
+
+a
+a
+a
+
+
+ 
+
+</note-content></text>
+  <last-change-date>2009-12-09T18:07:26.4245580-08:00</last-change-date>
+  <last-metadata-change-date>2009-12-26T21:32:37.1376290-08:00</last-metadata-change-date>
+  <create-date>2009-12-09T18:07:21.3126909-08:00</create-date>
+  <cursor-position>83</cursor-position>
+  <width>450</width>
+  <height>360</height>
+  <x>480</x>
+  <y>275</y>
+  <open-on-startup>False</open-on-startup>
+</note>

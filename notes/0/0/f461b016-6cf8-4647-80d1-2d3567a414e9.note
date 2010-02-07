@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>justin.tv</title>
+  <text xml:space="preserve"><note-content version="0.1">justin.tv
+#justin.tv question 2
+from itertools import *
+import os
+import re
+
+file_path="/usr/share/dict/words"
+
+class Trie:
+	
+	def __init__(self):
+		self.root=[None,{}]
+			
+	def cleaner(self,word):
+		foo = lambda ch : 'a' if ch in ['a','e','i','o','u'] else ch
+		word=''.join([foo(ch) for ch in word.lower()])
+		return ''.join([x for x,y in groupby(word)])
+	
+	def add(self,word):
+		cur_node = self.root
+		for ch in self.cleaner(word):
+			cur_node=cur_node[1].setdefault(ch,[None,{}])
+		cur_node[0]=word
+		
+	def find(self,word):
+		cur_node = self.root
+		for ch in self.cleaner(word):
+				try:
+					cur_node=cur_node[1][ch]
+				except <link:broken>KeyError</link:broken>:
+					return None
+		return cur_node[0]
+						
+	def findprefix(self,word):
+		cur_node = self.root
+		for ch in self.cleaner(word):
+				try:
+					cur_node=cur_node[1][ch]
+				except <link:broken>KeyError</link:broken>:
+					return None		
+		while(cur_node[0]==None):
+			try:
+				cur_node=cur_node[1][cur_node[1].keys()[0]]
+			except <link:broken>KeyError</link:broken>:
+				print "fatal logic error, kittens thrown off cliff\n"
+		return cur_node[0]	
+		
+		
+if __name__ =="__main__":
+	t=Trie()
+	wordlist=open(os.path.realpath(file_path))
+	words=wordlist.readlines()
+	wordlist.close()
+	
+	regex=lambda x:re.match("[\w]*",x.lower()).group(0)
+	cleanwords=set(regex(x) for x in words)
+	
+	for word in cleanwords:
+		t.add(word)	
+			
+	print "faa "+str(t.findprefix("viay"))
+	print "Foal "+str(t.find("Faol"))
+	print "weke "+str(t.find("weke"))
+	print "ppeeple "+str(t.find("ppeeple"))
+	print "CUNsperrICY "+str(t.find("CUNsperrICY"))
+	print "CUN "+str(t.findprefix("cun"))
+	print "xyz "+str(t.find("xyz"))
+	
+	while(True):
+		print t.find(raw_input("&gt;"))
+		
+</note-content></text>
+  <last-change-date>2010-01-20T01:12:39.6429200-08:00</last-change-date>
+  <last-metadata-change-date>2010-01-20T01:12:39.6429200-08:00</last-metadata-change-date>
+  <create-date>2010-01-20T01:05:26.1678760-08:00</create-date>
+  <cursor-position>1584</cursor-position>
+  <width>450</width>
+  <height>360</height>
+  <x>824</x>
+  <y>394</y>
+  <open-on-startup>False</open-on-startup>
+</note>

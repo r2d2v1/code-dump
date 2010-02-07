@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Old apache config</title>
+  <text xml:space="preserve"><note-content version="0.1">Old apache config 
+
+&lt;Directory <link:url>/home/vijay/moz_downloads/fcgi-2.4.0/examples/</link:url> &gt;
+                Options  +Includes <link:broken>FollowSymLinks</link:broken> +ExecCGI
+                <link:broken>AllowOverride</link:broken> none
+                Order allow,deny
+		Allow from all
+		<link:broken>SetHandler</link:broken> fastcgi-script
+		<link:broken>AddType</link:broken> text/html html
+		<link:broken>AddHandler</link:broken> server-parsed html
+		
+		<link:broken>AddOutputFilter</link:broken> Includes html
+&lt;/Directory&gt;
+
+
+
+&lt;<link:broken>VirtualHost</link:broken> 127.0.0.1:0&gt;
+	<link:broken>ServerName</link:broken> localhost
+	
+	<link:broken>DocumentRoot</link:broken>  <link:url>/home/vijay/moz_downloads/fcgi-2.4.0/examples/</link:url>
+	&lt;Directory  <link:url>/home/vijay/moz_downloads/fcgi-2.4.0/examples/</link:url> &gt;
+               Options  +Includes <link:broken>FollowSymLinks</link:broken> +ExecCGI
+                <link:broken>AllowOverride</link:broken> none
+                Order allow,deny
+		Allow from all
+		<link:broken>SetHandler</link:broken> fastcgi-script
+		<link:broken>AddType</link:broken> text/html html
+		<link:broken>AddOutputFilter</link:broken> Includes html
+
+ #               <link:broken>PythonHandler</link:broken> mod_python.publisher
+ #               <link:broken>PythonDebug</link:broken> On
+        &lt;/Directory&gt;
+
+
+
+#	&lt;Directory <link:url>/var/www/</link:url>&gt;
+#		Options Indexes <link:broken>FollowSymLinks</link:broken> <link:broken>MultiViews</link:broken>
+#		<link:broken>AllowOverride</link:broken> None
+#		Order deny,allow
+#		Deny from all
+#		Allow from 127.0.0.1
+#	&lt;/Directory&gt;
+#	    &lt;Files app.py&gt;
+#		<link:broken>SetHandler</link:broken> fastcgi-script
+#	    &lt;/Files&gt;
+
+#<link:broken>FastCgiServer</link:broken> <link:url>/var/www/app.py</link:url> -processes 4 -socket <link:url>/tmp/fcgi.sock</link:url>
+
+
+#	<link:broken>ScriptAlias</link:broken> /cgi-bin/ <link:url>/usr/lib/cgi-bin/</link:url>
+#	&lt;Directory "<link:url>/usr/lib/cgi-bin</link:url>"&gt;
+#		<link:broken>AllowOverride</link:broken> None
+#		Options +ExecCGI -<link:broken>MultiViews</link:broken> +<link:broken>SymLinksIfOwnerMatch</link:broken>
+#		Order allow,deny
+#		Allow from all
+#	&lt;/Directory&gt;
+
+	<link:broken>ErrorLog</link:broken> <link:url>/var/log/apache2/error.log</link:url>
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	<link:broken>LogLevel</link:broken> warn
+
+	<link:broken>CustomLog</link:broken> <link:url>/var/log/apache2/access.log</link:url> combined
+
+    Alias /doc/ "<link:url>/usr/share/doc/</link:url>"
+    &lt;Directory "<link:url>/usr/share/doc/</link:url>"&gt;
+        Options Indexes <link:broken>MultiViews</link:broken> <link:broken>FollowSymLinks</link:broken>
+        <link:broken>AllowOverride</link:broken> None
+        Order deny,allow
+        Deny from all
+        Allow from 127.0.0.0/255.0.0.0 ::1/128
+    &lt;/Directory&gt;
+
+&lt;/<link:broken>VirtualHost</link:broken>&gt;
+
+</note-content></text>
+  <last-change-date>2009-11-28T22:36:48.5541020-08:00</last-change-date>
+  <last-metadata-change-date>2009-11-28T22:39:59.4448560-08:00</last-metadata-change-date>
+  <create-date>2009-11-12T03:47:58.6001460-08:00</create-date>
+  <cursor-position>1319</cursor-position>
+  <width>450</width>
+  <height>360</height>
+  <x>822</x>
+  <y>187</y>
+  <tags>
+    <tag>system:notebook:undeletable</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

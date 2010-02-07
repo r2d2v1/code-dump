@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>CP project notes</title>
+  <text xml:space="preserve"><note-content version="0.1">CP project notes
+
+1. CPweb is superset of HTML web.
+	Building app build using HTML5 and Javascript only on client side.
+	Mobile - No flash or Java3D
+
+2. Fastcgi -&gt; flexible to be streaming,lightweight etc
+
+3. Tagging using Ajax
+
+4. Easy GUI to define expanse
+
+5. 3D voxel tagging possible and clicking on rendered space- To Do!!
+
+
+
+
+<bold>To discuss:</bold>
+
+1. Next steps
+
+
+
+
+2. career advice ,phd ,reco
+
+</note-content></text>
+  <last-change-date>2010-01-05T13:01:14.4685630-08:00</last-change-date>
+  <last-metadata-change-date>2010-01-05T13:01:14.4685630-08:00</last-metadata-change-date>
+  <create-date>2009-12-09T12:33:01.5858610-08:00</create-date>
+  <cursor-position>310</cursor-position>
+  <width>514</width>
+  <height>390</height>
+  <x>614</x>
+  <y>155</y>
+  <open-on-startup>False</open-on-startup>
+</note>

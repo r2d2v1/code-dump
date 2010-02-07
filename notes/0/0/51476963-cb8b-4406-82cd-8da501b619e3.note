@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>local.vjoy.net</title>
+  <text xml:space="preserve"><note-content version="0.1">local.vjoy.net
+
+sudo <link:url>/etc/init.d/mysql</link:url> start
+sudo <link:url>/etc/init.d/apache2</link:url> restart
+
+Describe your new note here.
+admin
+hdrGiG96diz$
+
+sudo ln -s <link:url>/home/vijay/web/vjoy/mysql-db</link:url> vjoy_wp
+
+sudo cp  <link:url>/home/vijay/web/vjoy/mysql-db</link:url> <link:url>/var/lib/mysql/vjoy_wp</link:url>
+
+
+29115787
+
+</note-content></text>
+  <last-change-date>2009-07-04T08:01:07.5364449-07:00</last-change-date>
+  <last-metadata-change-date>2009-11-28T22:39:59.5077420-08:00</last-metadata-change-date>
+  <create-date>2009-07-04T02:09:11.0789730-07:00</create-date>
+  <cursor-position>14</cursor-position>
+  <width>450</width>
+  <height>360</height>
+  <x>680</x>
+  <y>388</y>
+  <tags>
+    <tag>system:notebook:undeletable</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

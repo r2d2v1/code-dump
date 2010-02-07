@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Trie compile Notes</title>
+  <text xml:space="preserve"><note-content version="0.1">Trie compile Notes
+
+ gcc -Wall -I/home/vijay/moz_downloads/fcgi-2.4.0/include tiny-fcgi.c <link:url>/usr/local/lib/libfcgi.a</link:url> -o tiny-fcgi.cgi
+
+g++ <link:broken>TryTrie</link:broken>.cpp <link:broken>DictHash</link:broken>.cpp Trie.cpp <link:broken>TrieNode</link:broken>.cpp input.cc output.cc array.h keyarray.h -I<link:url>/home/vijay/moz_downloads/fcgi-2.4.0/include</link:url>  <link:url>/usr/local/lib/libfcgi.a</link:url> -o <link:broken>trytrie</link:broken>.cgi
+
+ gcc -Wall -I/home/vijay/moz_downloads/fcgi-2.4.0/include <link:broken>TryTrie</link:broken>.cpp <link:broken>DictHash</link:broken>.cpp Trie.cpp <link:broken>TrieNode</link:broken>.cpp keyarray.h array.h input.h output.h  <link:url>/usr/local/lib/libfcgi.a</link:url> -o trytrie.cgi
+
+ g++ -Wall -I/home/vijay/moz_downloads/fcgi-2.4.0/include trytrie.cpp <link:broken>DictHash</link:broken>.cpp Trie.cpp <link:broken>TrieNode</link:broken>.cpp keyarray.h array.h input.cc output.cc Rank.cpp  <link:url>/usr/local/lib/libfcgi.a</link:url> <link:url>/usr/local/lib/libfcgi++.a</link:url> -o trytrie2.fcgi
+
+
+<link:url>http://cryp.to/libfastcgi/</link:url>
+
+c++ -Wall  -I<link:url>/home/vijay/moz_downloads/fcgi-2.4.0/include</link:url> testmap.cpp   <link:url>/usr/local/lib/libfcgi.a</link:url> -o testmap.cgi
+
+g++ -Wall -I<link:url>/home/vijay/moz_downloads/fcgi-2.4.0/include</link:url> echo-cpp.cpp <link:url>/usr/local/lib/libfcgi.a</link:url> <link:url>/usr/local/lib/libfcgi++.a</link:url> -o echocpp.cgi
+
+
+g++ -o utf8-helloworld.fcgi utf8-helloworld.cpp -I../include -L../src <link:url>/usr/local/lib/libfastcgipp</link:url> -lboost_thread
+
+  gcc -Wall -I<link:url>/home/vijay/moz_downloads/fcgi-2.4.0/include</link:url> query.c <link:url>/usr/local/lib/libfcgi.a</link:url> -o query.cgi
+</note-content></text>
+  <last-change-date>2010-02-04T11:41:14.5412450-08:00</last-change-date>
+  <last-metadata-change-date>2010-02-04T11:41:14.5412450-08:00</last-metadata-change-date>
+  <create-date>2009-11-08T18:05:42.4945730-08:00</create-date>
+  <cursor-position>493</cursor-position>
+  <width>450</width>
+  <height>360</height>
+  <x>2264</x>
+  <y>244</y>
+  <tags>
+    <tag>system:notebook:GARUDAX</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy">
+  <title>Chen To DO WORK</title>
+  <text xml:space="preserve"><note-content version="0.1">Chen To DO WORK
+
+1.highlight keywords in suggestion -DONE
+
+2.delay,enter in user event -DONE
+
+3.ranking with popularity, importance - 
+
+4.performance - under 10ms -&gt;online querying --Under 50ms
+	1s to build index -&gt;moved to flash drive , todo-&gt;serialization
+
+5.deal with updates
+
+dec 8: model wiki "see also" as generative process.. for pubmde.. 
+
+
+
+1. Google Dense Map
+2.learn make to create installer
+
+
+Jan 4:
+ML/NLP tools
+cruxlux- kosmix-ischemia
+second click</note-content></text>
+  <last-change-date>2010-01-05T12:41:43.8674230-08:00</last-change-date>
+  <last-metadata-change-date>2010-01-05T12:41:43.8674230-08:00</last-metadata-change-date>
+  <create-date>2009-11-19T15:17:37.0225740-08:00</create-date>
+  <cursor-position>432</cursor-position>
+  <width>450</width>
+  <height>360</height>
+  <x>775</x>
+  <y>267</y>
+  <tags>
+    <tag>system:notebook:GARUDAX</tag>
+  </tags>
+  <open-on-startup>False</open-on-startup>
+</note>
