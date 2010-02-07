@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265275334637
+error,log,,,"Error logged from Debug Core: ",1265275339736
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265275347751
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265275395015
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1265275405623
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1265275407894
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1265275414474
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265275418925
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265275434943
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265275454925
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1265275454963
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265275458413
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265275476796
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1265275476871
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1265275479141
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1265275500944
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1265275503365
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1265275505728
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1265275521651
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1265275537882
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1265275559173
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1265275594190
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1265275596170
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265275597937
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265275610557

@@ -1,0 +1,50 @@
+/*
+ * DictHash.h
+ *
+ *  Created on: Nov 3, 2009
+ *      Author: vijay
+ */
+
+#ifndef DICTHASH_H_
+#define DICTHASH_H_
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <vector>
+#include <map>
+#include <list>
+#include <set>
+#include <string>
+#include <cstring>
+#include <algorithm>
+#include "array.h"
+#include "keyarray.h"
+#include "Trie.h"
+#include "input.h"
+
+//probably,not ISO c++ complaint, here used for finding PWD
+#include <unistd.h>
+
+using namespace std;
+
+
+//long myatoi(const string &s);
+
+string getPWD();
+
+void processText(map<string, int> &wordCounts,vector<string> &data);
+
+//getDictHash(wordDictionary,invDictionary,dataSet,recordList,T);
+void getDictHash(map<string,long> &wordDictionary,
+				vector<string> &invDictionary,
+				vector<list<long> > &docSet,
+				vector<string> &recordList,
+				Trie &T,
+				const vector<long> &rankList);
+
+void processWord(string &word);
+void Tokenize(const string& str,vector<string>& tokens,const string& delimiters);
+
+//void initSkipList(vector<string> &skipList);
+
+#endif /* DICTHASH_H_ */

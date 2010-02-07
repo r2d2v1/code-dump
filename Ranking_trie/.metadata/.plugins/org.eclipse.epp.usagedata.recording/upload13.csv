@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui",1265179818289
+started,bundle,com.google.appengine.eclipse.core,1.1.2.v200910131704,"com.google.appengine.eclipse.core",1265179818290
+started,bundle,com.google.gdt.eclipse.core,1.1.2.v200910131704,"com.google.gdt.eclipse.core",1265179818290
+started,bundle,com.google.gdt.eclipse.platform.shared,1.1.2.v200910131704,"com.google.gdt.eclipse.platform.shared",1265179818291
+started,bundle,com.google.gdt.eclipse.suite,1.1.2.v200910131704,"com.google.gdt.eclipse.suite",1265179818313
+started,bundle,com.google.gwt.eclipse.core,1.1.2.v200910131704,"com.google.gwt.eclipse.core",1265179818337
+os,sysinfo,,,"linux",1265179818345
+arch,sysinfo,,,"x86",1265179818345
+ws,sysinfo,,,"gtk",1265179818345
+locale,sysinfo,,,"en_US",1265179818345
+processors,sysinfo,,,"2",1265179818345
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1265179818345
+java.runtime.version,sysinfo,,,"1.6.0_16-b01",1265179818345
+java.specification.name,sysinfo,,,"Java Platform API Specification",1265179818345
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1265179818345
+java.specification.version,sysinfo,,,"1.6",1265179818345
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1265179818345
+java.version,sysinfo,,,"1.6.0_16",1265179818345
+java.vm.info,sysinfo,,,"mixed mode, sharing",1265179818345
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1265179818345
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1265179818345
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1265179818345
+java.vm.specification.version,sysinfo,,,"1.0",1265179818345
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1265179818345
+java.vm.version,sysinfo,,,"14.2-b01",1265179818345

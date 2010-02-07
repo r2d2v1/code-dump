@@ -1,0 +1,118 @@
+<html >
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>KeyWord TRIE</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+        <!--<script src="searchhi.js" type="text/javascript"></script>-->
+        <style>
+			span.searchword{
+			color: red;
+			font-weight: bold;
+			}
+			span.highlight {
+			color: red;
+			font-weight: bold;
+			}
+	</style>
+	</head>
+    <body>
+        <center><h1 >KeyWord TRIE</h4></center>
+<center><input id="one" type="text" value=""  size="25" /> <br /></center>
+
+        <!-- <input id="button" type="button" name="" value="Submit" />-->
+    
+	<div id="diff"></div>
+    <div id="result"></div>
+    <div id="test"></div>
+    
+	<script type="text/javascript">
+            <!--
+	var queryT;
+	var idleQ=0;
+	var idleT=0;
+	function setTime(queryTime){
+		queryT=queryTime;		
+	}
+	
+	function timerIncrement()
+   {
+	 $("#test").html("idle= "+new Number(idleT/3).toFixed(0)+"s");
+     idleT++;
+     if (idleQ==1 && idleT > 1)
+     {
+       query();
+       idleQ=0;
+     }
+     //idleQ=0;
+     //idleT=0;
+   }
+	
+    $(document).ready(function(){
+    // conten-type defaults to "application/x-www-form-urlencoded"
+    idleT=0;
+    idleQ=1;
+    var idleInterval = setInterval("timerIncrement()",300);
+    //setInterval(idleT++,1000);
+    
+    $("#one").keyup(function(e) {
+		idleT=0;
+		idleQ=1;
+		var code = (e.keyCode ? e.keyCode : e.which);
+		switch(code){
+			case 32:
+				query();break;
+			case 13:
+				query();}
+           });
+      });
+
+     function success (data, textStatus) {
+		//$("#result").html(data);
+		var responseTime=(new Date()).getTime( );
+		$("#diff").html("Response= "+(responseTime-queryT)/1000+" s");
+				
+		highlightnDisplay(data);
+		//$("#result").html("working");
+	   }
+
+      function error (request, textStatus) {
+                $("#result").html(request.responseText);
+      }
+            
+      function query(){
+				var data = $("#one").val();
+			var queryTime=(new Date( )).getTime( );
+			setTime(queryTime);
+			if(data.length > 3){
+			$.ajax ({
+                        url: './trytrie.fcgi?'+data,
+                        type: "POST",
+                        //QUERY_STRING: data, //this is the POST data
+                        success: success,
+                        error: error,
+                    });
+		}}
+
+	function highlightnDisplay(data){
+	
+		var searchString = $("#one").val();
+		var tmphtml=data;
+		//var searchTerms = searchString.split(' ');
+		//$("#test").html(searchTerms[1]+"hola");
+		//for (var i in searchTerms) 	{
+		//$("#test").html($("#one").val()+searchString);		
+		  var regex = new RegExp(">([^<]*)?("+searchString+")([^>]*)?<","ig");
+		  data=tmphtml.replace(regex,'>$1<span class="highlight">$2</span>$3<');
+		//}
+		//$("#result").html("<span class=\"highlight\">"+data+"</span>");
+		$("#result").html(data);
+	}
+	
+	
+
+        
+             -->
+        </script>
+
+	</body>
+</html>

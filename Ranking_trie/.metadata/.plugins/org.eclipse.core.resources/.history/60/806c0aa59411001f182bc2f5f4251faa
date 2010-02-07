@@ -1,0 +1,35 @@
+/*
+ * Rank.h
+ *
+ *  Created on: Feb 4, 2010
+ *      Author: vijay
+ */
+
+#ifndef RANK_H_
+#define RANK_H_
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <vector>
+#include <map>
+#include <set>
+#include <list>
+#include "input.h"
+
+using namespace std;
+
+class Rank{
+
+public:
+	vector<long> rankList;
+	Rank();
+	virtual ~Rank();
+
+	bool fncomp(list<long> * lhs,list<long> *rhs);
+
+	void merge_sorted_lists(std::list<long> output, std::list<std::list<long> > &input);
+
+	void top5rank(list<long>& output,list<list<long> > &result);
+
+};
+#endif /* RANK_H_ */

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.undo",1265240863038
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1265240863979
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265240915548
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265244238039
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265244238810
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265244928088
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265244931250
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265244972534
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265244973654
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265245194356
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265245266274
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1265245266999
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265245334692
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265245412389
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265245416740
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265245418472
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1265245428833
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1265245432894
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265245439246
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265245452711
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265245466498
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1265245466548
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265245481558
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265245484209
+error,log,,,"Error logged from Debug Core: ",1265245518120

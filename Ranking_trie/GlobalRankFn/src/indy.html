@@ -1,0 +1,418 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<title>iPubMed Search</title>
+<!-- <link rel='stylesheet' href='index.css' type='text/css' /> -->
+<style>
+body {
+	min-width: 800px;
+}
+
+div.head_box
+{
+	width: 100%;
+	position: fixed;
+	top:0px;
+	left:0px;
+	z-index: 2;
+	background-color:#f0f7fb;
+}
+div.header {
+	width: 100%;
+	font-size: 9pt;
+	font-family: Arial,sans-serif;
+	background-color:#f0f7fb;
+	z-index: 2;
+}
+
+h1 {
+	margin-bottom:0;
+}
+div.result-bar {
+
+	text-align: right;
+	color:#484848 ;
+	background-color:#99CCFF;
+	z-index: 2;
+}
+
+div.box {
+	position: absolute;
+	top:140px;
+	width: 98%;
+}
+
+div.content {
+	position: absolute;
+	top:155px;
+	z-index: 1;
+	width: 98%;	
+}	
+							
+div.content-left { 
+	width: 98%;
+	float: left; 
+	margin-left: 0.5em;  
+}
+            
+div.content-right {
+	display: block;
+	width: 28%;
+	max-width: 370px;
+	float: right;            		     
+}
+
+div.pagination {
+	
+	text-align: right;
+	width: 98%;
+}
+
+div.pagination a { color: #4276aa; }
+div.pagination a:visited { color: #4276aa; }
+
+span.highlight1 {
+    color: red;
+    font-weight: bold;
+}
+span.highlight2 {
+    color: #ff00ff;
+    font-weight: bold;
+}
+
+a.fuzzyLink{
+	color:blue;
+    font-size:0.9em;
+}
+span.text{
+	color:#505050;
+    font-size:0.9em;
+}
+
+div.rprt { 
+	font-family:arial,helvetica,sans-serif; 
+	margin: 0.5em 0 1.4em -.5em; 
+	padding: 0em; 
+	display: block; 
+	*margin-bottom: 0.9em; 
+	zoom: 1; 
+}
+
+div.rprt p {
+	margin-left: 55px;
+}
+
+div.rprt p.title { 
+	
+	margin-bottom: 0; 
+	_zoom: 1; 
+}
+div.rprt p.title a { color: #2222cc; }
+div.rprt p.title a:visited { color: #551a8b; }
+div.rprt p.title a:active { color: #cc3300; }
+
+div.rprt p.authors { 
+	line-height: 1em; 
+	margin: .3em 0em 0em 55px; 
+	font-size: 0.85em;
+	*margin-top: .4em 
+}
+
+div.rprt p.source{ 
+	font-size: 0.75em;
+	color: green;
+	line-height: 1em; 
+	margin-top: 0.5em; 
+	margin-bottom: 0.35em;
+}
+
+div.rprt p.affiliation { 
+	line-height: 1em; 
+	margin: .3em 0em 0em 55px; 
+	font-size: 0.8em;
+	color: #606060;
+	*margin-top: .4em 
+}
+
+div.rprt p.keywords { 
+	line-height: 1em; 
+	margin: .3em 0em 0em 55px; 
+	font-size: 0.7em;
+	color: #4276aa;
+	*margin-top: .4em 
+}
+
+div.rprt p.keywords a:visited { color: #4276aa; }
+
+</style>
+</head>
+<body>
+
+<div id='head_box' class='head_box'>
+<div id='header' class='header'>
+<div style="position:absolute;right:13px;top:7px;"><a href='http://tastier.ics.uci.edu/'>Powered by the TASTIER Project</a></div>
+
+<div style="position:absolute;left:13px;top:7px;"><a href='http://tastier.cs.tsinghua.edu.cn/ipubmed/'>Mirror Site at Tsinghua University</a></div>
+
+<center>
+<div><h1>iPubMed Search</h1></div>
+<div>
+<table>
+<tr>
+<td align='right'>
+<div class='fuzzy'>
+<span class='text'>Fuzzy Search:</span>&nbsp;
+<a id ='on' class='fuzzyLink' style='display:none;' href='#' onmousedown="fuzzy=1;check(document.getElementById('input').value);disableLink('on','onText');enableLink('off','offText');return false;">On</a><span id='onText' class='text'>On</span> <span class='text'>&nbsp;|&nbsp;</span>
+<a id ='off' class='fuzzyLink' href='#' onmousedown="fuzzy=0;check(document.getElementById('input').value);disableLink('off','offText');enableLink('on','onText');return false;">Off</a><span id='offText' class='text' style='display:none;'>Off</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<input type='text' id='input' style='width:800px' onkeyup='check(this.value)'>
+</td>
+</tr>
+</table>
+</div>
+<div style='font-size:0.9em;'>Type in keywords in title, author, journal, MeSH heading and more to search for 
+<b>18,718,317</b> MEDLINE publications (as of Sept 28, 2009).</div>
+<br>
+<div><a href='feedback.html'>Feedback</a></div>
+
+</center>
+</div>
+
+<div id='result-bar' class='result-bar'></div>
+</div>
+<div class='box'>
+<center>
+<div id = 'instructions' style='width:500px;font-size:9pt;font-family:Arial,sans-serif;text-align:left;border:solid grey 1px;'>
+<p>&nbsp; Search is <i>fuzzy</i> and happens as you type.</p>
+
+<p>&nbsp; Examples:</p>
+
+<ul>
+<li><b>homocystaine</b> should find articles about homocysteine;</li>
+
+<li><b>marshel kaplan</b> should find publications by Marshal Kaplan;</li>
+<li><b>breast cancer vipiwala</b> should find publications about breast cancer by Vapiwala.</li>
+</ul>
+<p>&nbsp; Fuzzy Search can be disabled to find the exact matches only.</p>
+</div>
+</center>
+</div>
+
+
+<div id='content' class='content'>
+<div id='top' class='pagination' style='margin-top:10px;'></div>
+<div id='left' class='content-left'></div>
+<!--<div id='right' class='content-right'></div>-->
+<div id='bottom' class='pagination' style='margin-bottom:10px;'></div>
+</div>
+
+
+<script>
+var data;
+var busy = false;
+var pending = false;
+var page = 0;
+var fuzzy = 1;
+var m = 20;
+var sid = Math.random();
+
+document.getElementById('input').focus();
+
+function check(value) {
+
+	page=0;
+	if (value.length==0)
+	{
+		busy = false;
+		document.getElementById('result-bar').innerHTML="";
+		document.getElementById('top').innerHTML="";
+		document.getElementById('bottom').innerHTML="";
+		document.getElementById('instructions').style.display = 'block';
+		document.getElementById('left').innerHTML="";
+	}
+	else if(value.length >= 3){
+		document.getElementById('instructions').style.display = 'none';
+		if(busy)pending = true;
+		else query(value);
+        }
+}
+function query(value) {
+	
+	var values = value.split(' ');
+        var url = "/cgi-bin/broker.py?sid="+sid+"&max="+m+"&page="+page+"&fuzzy="+fuzzy+"&q=";
+        for(var i = 0; i < values.length; i++) {
+            if(i)url += "+";
+            url += values[i].toLowerCase();
+        }
+	self.scrollTo(0, 0);
+	busy = true;
+	sendAjaxRequest(display, url);
+}
+
+function display(responseText) {
+	var gPageStartTime = (new Date( )).getTime( );
+	busy = false;                                                                                                                                                                                                                 
+	var response = eval("(" + responseText + ")");
+	time = response.t;
+	data = response.d;
+
+	var html = "";
+	if(data.length)
+		html += "(<b>"+(time/1000)+"</b> seconds) Results <b>"
+			+(page*m+1)+"</b> - <b>"+(page*m+data.length)+"</b>.";
+	else
+		html += "(<b>"+(time/1000)+"</b> seconds) <b>No results found</b>.";
+
+	document.getElementById('result-bar').innerHTML = html;
+
+
+	html = "";
+	for(var i = 0; i < data.length; i++) {
+		var regex = prepareRegex(data[i].k, data[i].ed);
+		html += "<div class='rprt'>";
+		html += "<p class='title'><a href='http://www.ncbi.nlm.nih.gov/pubmed/" + data[i].d[0] + "'>"
+			+ highlight(data[i].d[2], regex, "highlight1", "highlight2") + "</a></p>";
+		html += "<p class='authors'>" + highlight(data[i].d[3], regex, "highlight1", "highlight2") + "</p>";
+		html += "<p class='affiliation'>" + highlight(data[i].d[1], regex, "highlight1", "highlight2") + "</p>";
+		html += "<p class='source'>"+ highlight(data[i].d[5], regex, "highlight1", "highlight2") + ". " 
+			+ highlight(data[i].d[4], null, "highlight1", "highlight2") + ".</p>";
+		html += "<p class='keywords'>";
+		var keyword = data[i].d[7];
+		var keywords = keyword.split(',');
+		for(var j = 0; j < keywords.length; j++) {
+		    if(j)html += "&nbsp;|&nbsp;";
+		    var str = keywords[j].replace(/^\s+/, '');
+		    html += "<a href='#' onmousedown=\"page=0; check('"+str+"'); document.getElementById('input').value='"+str+"'; return false;\">"
+				+ highlight(str, regex, "highlight1", "highlight2") + "</a>";
+		}
+		html += "</p>";
+		html += "</div>";
+	}
+
+	document.getElementById('left').innerHTML=html;
+
+
+	html = "";
+
+	if(page) 
+		html += "<a style='text-decoration: none;' href='#' onmousedown=\"page=0; query('"+document.getElementById('input').value+"'); return false;\">&#171;&#160;First</a> "
+		+ "&nbsp;&nbsp;<a style='text-decoration: none;' href='#' onmousedown=\"page--; query('"+document.getElementById('input').value+"'); return false;\">Previous</a> "
+		+ "&nbsp;&nbsp;<a href='#' onmousedown=\"page--; query('"+document.getElementById('input').value+"'); return false;\">"+page+"</a> &nbsp;|&nbsp;";
+
+	if(page || data.length >= m)
+		html += (page+1);
+
+	if(data.length >= m)
+		html += "&nbsp;|&nbsp;<a href='#' onmousedown=\"page++; query('"+document.getElementById('input').value+"'); return false;\">"+(page+2)+"</a>&nbsp;&nbsp;"
+		+ "<a style='text-decoration: none;' href='#' onmousedown=\"page++; query('"+document.getElementById('input').value+"'); return false;\">Next</a>";
+
+       
+	document.getElementById('top').innerHTML = html;
+	document.getElementById('bottom').innerHTML = html;
+
+
+    if(pending) {
+        pending = false;
+        query(document.getElementById('input').value);
+    }
+
+    var pageEndTime = (new Date( )).getTime( );
+    var pageLoadTime = (pageEndTime - gPageStartTime)/1000;
+    //alert("Page Load Time: " + pageLoadTime);
+}
+
+function prepareRegex(keys, ed) {
+    var regex1 = "([^A-Za-z0-9_&])(";
+    var regex2 = "([^A-Za-z0-9_&])(";
+    var j1 = 0;
+    var j2 = 0;
+    for(var k = 0; k < keys.length; k++)
+        if(keys[k].length)
+			if(ed[k] == 0) {
+		        if(j1)regex1 += "|";
+		        regex1 += keys[k].replace(/\W/g, 
+		            function(sub){return "\\" + sub;});
+		        j1++;
+			}
+			else {
+		        if(j2)regex2 += "|";
+		        regex2 += keys[k].replace(/\W/g, 
+		            function(sub){return "\\" + sub;});
+		        j2++;
+			}
+
+    regex1 += ")";
+	regex2 += ")";
+    return [ (j1)?new RegExp(regex1, "gi"):null, (j2)?new RegExp(regex2, "gi"):null ];
+}
+
+function highlight(string, regexp, stylec1, stylec2) {
+    var str = " " + string.replace(/</g, "&lt;");
+	if(regexp == null)
+		return str;
+    if(regexp[0] != null)
+		str = str.replace(regexp[0], function(sub, m1, m2) {
+		        return m1 + "<span class='" + stylec1 + "'>" + m2 + "</span>";
+		    });
+	if(regexp[1] != null)
+	    str = str.replace(regexp[1], function(sub, m1, m2) {
+            return m1 + "<span class='" + stylec2 + "'>" + m2 + "</span>";
+        });
+    return str.replace(/^\s+/, '');;
+}
+
+function enableLink(linkid,textid) {
+	var link=document.getElementById(linkid);
+	var text=document.getElementById(textid);
+	text.style.display="none";
+	link.style.display="";
+}
+function disableLink(linkid, textid) {
+	var link=document.getElementById(linkid);
+	var text=document.getElementById(textid);
+	link.style.display="none";
+	text.style.display="";
+
+}
+
+function sendAjaxRequest(callback, url) {
+  // Provide the XMLHttpRequest class for stupid IE 5.x-6.x:
+  if( typeof XMLHttpRequest == "undefined" ) XMLHttpRequest = function() {
+    try { return new ActiveXObject("Msxml2.XMLHTTP.6.0") } catch(e) {}
+    try { return new ActiveXObject("Msxml2.XMLHTTP.3.0") } catch(e) {}
+    try { return new ActiveXObject("Msxml2.XMLHTTP") } catch(e) {}
+    try { return new ActiveXObject("Microsoft.XMLHTTP") } catch(e) {}
+    throw new Error( "This browser does not support XMLHttpRequest." )
+  };
+
+  var request =  new XMLHttpRequest();
+ 
+  request.onreadystatechange = function() {
+    if (request.readyState == 4 && request.status == 200) {
+      if (request.responseText) {
+        callback(request.responseText);
+      }
+    }
+  };
+  
+  request.open("get", url);
+  request.send(null);
+}
+
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7666269-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body></html>
+

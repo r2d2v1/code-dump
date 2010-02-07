@@ -1,0 +1,231 @@
+/*
+ * DictHash.cpp
+ *
+ *  Created on: Nov 3, 2009
+ *      Author: vijay
+ */
+
+#include "DictHash.h"
+
+//to get present working directory
+//probably not ISO c++ complaint
+string getPWD(){
+	size_t size;
+	char *path=new char[1024];
+	path=getcwd(path,size);
+	return (string)path;
+}
+
+void getDictHash(map<string,long> &wordDictionary,
+				vector<string> &invDictionary,
+				vector<vector<long> > &docSet,
+				vector<string> &recordList,
+				Trie &T)
+{
+	//string PWD(getPWD());
+	string inFileName,rankFile;
+	inFileName.append("/home/vijay/workplace/Resources/data.txt");
+	rankFile.append("/home/vijay/workplace/Resources/ranking.txt");
+
+	vector<string> data;
+	if(existFile(inFileName)){
+		readString(data,inFileName,0,500);
+	}
+
+	vector<long> rankList;
+	if(existFile(inFileName)){
+			readBin(rankList,rankFile);
+	}
+
+	//wordCounts
+	map<string, int> wordCounts;
+	processText(wordCounts, data);
+
+	//wordDictionary and invDictionary
+	multimap<int, string, greater<int> > sortByCount;
+	map<string, int>::const_iterator wIter;
+	for (wIter = wordCounts.begin(); wIter != wordCounts.end(); wIter++)
+	sortByCount.insert(pair<int, string>(wIter->second, wIter->first));
+
+	long counter=0,recordCounter=0;
+	multimap<int, string>::const_iterator cIter;
+	for (cIter = sortByCount.begin(); cIter != sortByCount.end(); cIter++){
+		counter++;
+		wordDictionary.insert(pair<string,long>(cIter->second,counter));
+		invDictionary.push_back(cIter->second);
+	}
+
+	//Create docSet for query result retrieval &
+	//create suffixes of query words
+	vector< vector<long> > suffixData;
+	vector<long> suffixDocID;
+	vector<string>::const_iterator iterData;
+	vector<string> tokens;
+	vector<string>::const_iterator tokenIter;
+	vector<long> tmpSet;
+	vector<long> veryTmp;
+
+	for(counter=0,recordCounter=0,iterData=data.begin();iterData!=data.end();iterData++){
+		if(((string)*iterData).compare("*NEWRECORD")==0){
+			docSet.push_back(tmpSet);
+			tmpSet.clear();
+			counter++;
+		}
+		else{
+			//cout<<recordCounter<<"->"<<(string)*iterData;
+			recordList.push_back((string)*iterData);
+			tmpSet.push_back(recordCounter);
+			recordCounter++;
+
+			tokens.clear();
+			veryTmp.clear();
+			Tokenize((string)*iterData,tokens," ");
+
+			for(tokenIter=tokens.begin();tokenIter!=tokens.end();tokenIter++){
+					veryTmp.push_back(wordDictionary[*tokenIter]);
+			}
+
+			for(tokenIter=tokens.begin();tokenIter!=tokens.end()-1;tokenIter++){
+				suffixData.push_back(veryTmp);
+				suffixDocID.push_back(counter);
+				veryTmp.erase(veryTmp.begin());
+			}
+			suffixData.push_back(veryTmp);
+			suffixDocID.push_back(counter);
+		}
+	}
+
+
+	//Trie Flooding
+	vector< vector<long> >::const_iterator pIter;
+	vector<long>::const_iterator docIDIter;
+	vector<long> tmp;
+	vector<long>::const_iterator tIter;
+
+	for(pIter=suffixData.begin(),docIDIter=suffixDocID.begin();pIter!=suffixData.end();docIDIter++,pIter++){
+		tmp.clear();
+		tmp=*pIter;
+		T.AddToTrie(tmp,*docIDIter);
+	}
+}
+
+
+void processText(map<string, int>& wordCounts,vector<string> &data)
+{
+	//strip empty lines
+	vector<string> stripEmptyLinesData;
+	vector<string>::const_iterator iter;
+	//int invCounter=0;
+	for(iter=data.begin();iter!=data.end();iter++){
+		if(!iter->empty()){
+			stripEmptyLinesData.push_back(*iter);
+		}
+	}
+	data.clear();
+	data=stripEmptyLinesData;
+	stripEmptyLinesData.clear();
+
+	string word;
+	int counterAll=0,counterAccepted=0;
+	vector<string> cleanData;
+	vector<string> tokens;
+	string cleantokens;
+	vector<string>::iterator citerData;
+	vector<string>::iterator citerTokens;
+
+	for(citerData=data.begin();citerData!=data.end();citerData++){
+		//cout<<*citer<<endl;
+		if(((string)*citerData).compare("*NEWRECORD")!=0){//not *NEWRECORD
+			tokens.clear();
+			cleantokens.clear();
+			Tokenize((string)*citerData,tokens," ");
+
+			for(citerTokens=tokens.begin();citerTokens!=tokens.end();citerTokens++){
+				counterAll++;
+				word.assign(citerTokens->data());
+				processWord(word);
+
+				//if(word.length()!=0 && skipList.find(word) == skipList.end()){
+					cleantokens.append(word+" ");
+					counterAccepted++;
+					wordCounts[word]++;
+				//}
+			};
+			cleanData.push_back(cleantokens);
+		}else{
+			cleanData.push_back(*citerData);
+		}
+
+	}
+	data.clear();
+	data=cleanData;
+	cout<<"total words : "<<counterAll<<endl;
+	cout<<"total words accepted : "<<counterAccepted<<endl;
+}
+
+void Tokenize(const string& str,
+                      vector<string>& tokens,
+                      const string& delimiters = " ")
+{
+    // Skip delimiters at beginning.
+    string::size_type lastPos = str.find_first_not_of(delimiters, 0);
+    // Find first "non-delimiter".
+    string::size_type pos     = str.find_first_of(delimiters, lastPos);
+
+    while (string::npos != pos || string::npos != lastPos)
+    {
+        // Found a token, add it to the vector.
+        tokens.push_back(str.substr(lastPos, pos - lastPos));
+        // Skip delimiters.  Note the "not_of"
+        lastPos = str.find_first_not_of(delimiters, pos);
+        // Find next "non-delimiter"
+        pos = str.find_first_of(delimiters, lastPos);
+    }
+}
+
+/*
+void initSkipList(vector<string>& skipList)
+{
+  // Use a pre-specified skip-list.
+
+  const char *swords[] = {
+//    "a", "all", "am", "an", "and", "are", "as", "at",
+//    "be", "been", "but", "by",
+//    "did", "do",
+//    "for", "from",
+//    "had", "has", "have", "he", "her", "hers", "him", "his",
+//    "i", "if", "in", "into", "is", "it", "its",
+//    "me", "my",
+//    "not",
+//    "of", "on", "or",
+//    "so",
+//    "that", "the", "their", "them", "they", "this", "to",
+//    "up", "us",
+//    "was", "we", "what", "who", "why", "will", "with",
+//    "you", "your",
+    0
+  };
+
+  for (int i = 0; swords[i] != 0; i++)
+	  skipList.push_back(string(swords[i]));
+}
+*/
+
+void processWord(string &word)
+{
+
+  // Convert the word to all lower-case.
+  for (string::iterator si = word.begin(); si != word.end(); ++si)
+    *si = tolower(*si);
+
+  // Remove any leading and/or trailing punctuation on the word.
+
+  unsigned int i;
+
+  for (i = 0; i < word.size() && ispunct(word[i]); i++) /* nothing */ ;
+  word = word.erase(0, i);
+
+  for (i = word.size() - 1; i >= 0 && ispunct(word[i]); i--) /* nothing */ ;
+  word = word.erase(i + 1, word.size() - i + 1);
+
+}

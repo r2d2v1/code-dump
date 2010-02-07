@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265193002595
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265193005087
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265193016658
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265193021656
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1265193021689
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1265193030897
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265193033749
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265193047242
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265193048472
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1265193048512
+error,log,,,"Error logged from Debug Core: ",1265193052214
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265193055329
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265193079111
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1265193145235
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265193151362
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265193151817
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265193154875
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265193155187
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265193159553
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1265193160647
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265193176635
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265193177134
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265193180703
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265193184205
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.select.lineEnd",1265193185696

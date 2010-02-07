@@ -1,0 +1,51 @@
+/*
+ * DictHash.h
+ *
+ *  Created on: Nov 3, 2009
+ *      Author: vijay
+ */
+
+#ifndef DICTHASH_H_
+#define DICTHASH_H_
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <vector>
+#include <map>
+#include <list>
+#include <set>
+#include <string>
+#include <cstring>
+#include <algorithm>
+#include "array.h"
+#include "Trie.h"
+
+//probably,not ISO c++ complaint, here used for finding PWD
+#include <unistd.h>
+
+//#include <iterator>
+
+using namespace std;
+
+string getPWD();
+
+//void initSkipList(vector<string> &skipList);
+void processText(map<string, int> &wordCounts,vector<string> &data);
+
+
+//getDictHash(data,wordDictionary,invDictionary,dataSet,recordList,T);
+void getDictHash(map<string,long> &wordDictionary,
+				vector<string> &invDictionary,
+				vector<vector<long> > &docSet,
+				vector<string> recordList,
+				Trie &T);
+
+void processWord(string &word);
+void Tokenize(const string& str,vector<string>& tokens,const string& delimiters);
+
+
+//void makeNGrams(vector<long> &line,vector<vector<long> > &Ngrams);//TODO
+//void makeNGrams(vector<long> &line,vector<vector<long> > &Ngrams,vector<long> &Ngramsdocid);
+
+
+#endif /* DICTHASH_H_ */

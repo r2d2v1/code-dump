@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265191291018
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1265191310481
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191320131
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191321696
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191322366
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191350858
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1265191353181
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265191354137
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265191369780
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191374137
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191375375
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1265191377324
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1265191377459
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265191392782
+error,log,,,"Error logged from Debug Core: ",1265191397044
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191401509
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191412648
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265191420670
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265191421110
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265191421741
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.select.lineEnd",1265191428343
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1265191429536
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1265191430814
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1265191431356
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265191432303

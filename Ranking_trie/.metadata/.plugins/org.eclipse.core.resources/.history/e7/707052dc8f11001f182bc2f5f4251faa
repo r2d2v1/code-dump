@@ -1,0 +1,59 @@
+/*
+ * Rank.h
+ *
+ *  Created on: Feb 4, 2010
+ *      Author: vijay
+ */
+
+#ifndef RANK_H_
+#define RANK_H_
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <vector>
+#include <map>
+#include <set>
+#include <list>
+#include "input.h"
+
+using namespace std;
+
+class Rank{
+
+public:
+	vector<long> rankList;
+	Rank();
+	virtual ~Rank();
+
+//
+//		cmp_list(vector<long>& rankList){
+//			rank=rankList;
+//		}
+//	    bool operator()( std::list<long> *a, std::list<long> *b) const {
+//	        return rank[a->front()] < rank[b->front()];
+//	    }
+//	    vector<long> rank;
+//	};
+
+
+
+	struct cmp_list {
+			bool operator()(const std::list<long> *a, const std::list<long> *b) const {
+		       return compare(a->front(),b->front());
+		    }
+	};
+
+	//bool cmp_list(std::list<long> *a, std::list<long> *b);
+	void merge_sorted_lists(std::list<long> output, std::list<std::list<long> > &input);
+
+	void top5rank(list<long>& output,list<list<long> > &result);
+
+};
+
+bool compare(long a, long b)const{
+		return rankList[a] < rankList[b];
+}
+
+
+
+#endif /* RANK_H_ */

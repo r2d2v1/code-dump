@@ -1,0 +1,6 @@
+#Thu Feb 04 07:01:15 PST 2010
+addedNewWizardActionsorg.eclipse.cdt.ui.CPerspective=true
+eclipse.preferences.version=1
+addedNewWizardActionsorg.eclipse.debug.ui.DebugPerspective=true
+SdkRegistrants=com.google.appengine.eclipse.sdkbundle_1.2.6.v200910131704,com.google.gwt.eclipse.sdkbundle.linux_1.7.1.v200909221731
+addedNewWizardActionsorg.eclipse.jdt.ui.JavaPerspective=true

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.info,sysinfo,,,"mixed mode, sharing",1265157280284
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1265157280284
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1265157280284
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1265157280284
+java.vm.specification.version,sysinfo,,,"1.0",1265157280284
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1265157280284
+java.vm.version,sysinfo,,,"14.2-b01",1265157280284
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1265157281511
+activated,view,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.PackageExplorer",1265157281537
+closed,view,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.internal.introview",1265157281559
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265157297374
+started,bundle,org.eclipse.cdt.core,5.1.1.200909110608,"org.eclipse.cdt.core",1265157303700
+started,bundle,org.eclipse.ui.navigator,3.4.1.M20090911-1550,"org.eclipse.ui.navigator",1265157303768
+started,bundle,org.eclipse.core.filesystem,1.2.0.v20090507,"org.eclipse.core.filesystem",1265157303795
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.0.v20090513-2000,"org.eclipse.ltk.core.refactoring",1265157303796
+started,bundle,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui",1265157303798
+started,bundle,org.eclipse.cdt.make.ui,6.0.1.200909110608,"org.eclipse.cdt.make.ui",1265157303805
+started,bundle,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.resources",1265157303827
+opened,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1265157303999
+activated,perspective,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.CPerspective",1265157304047
+activated,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.ProblemView",1265157304098
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.perspectives.showPerspective",1265157304182
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.perspectives.showPerspective",1265157304182
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265157304215
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1265157304882

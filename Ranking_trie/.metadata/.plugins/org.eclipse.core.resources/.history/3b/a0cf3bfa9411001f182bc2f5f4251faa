@@ -1,0 +1,55 @@
+/*
+ * Rank.cpp
+ *
+ *  Created on: Feb 4, 2010
+ *      Author: vijay
+ */
+#include "Rank.h"
+
+	Rank::Rank(){
+		string rankFile;
+		rankFile.append("/home/vijay/workplace/Resources/ranking.txt");
+		if(existFile(rankFile)){
+			readBin(rankList,rankFile);
+		}
+	}
+	Rank::~Rank(){}
+	/*
+	struct cmp_list {
+				bool operator()(const std::list<long> *a, const std::list<long> *b) const {
+				      return rankList.at(a->front()), rankList.at(b->front());
+				}
+		};*/
+
+	bool fncomp(list<long> * lhs,list<long> *rhs){return rankList[lhs->front()] < rankList[rhs->front()];}
+
+	void Rank::merge_sorted_lists(std::list<long> output, std::list<std::list<long> > &input){
+
+		bool (*fn_pt)(list<long> *,list<long> *)=fncomp;
+		set<list<long> *,bool(*)(list<long> *,list<long> *)> pq (fn_pt);
+
+		for(list<list<long> >::iterator it = input.begin();it != input.end(); it++)
+		{
+			if (it->empty())
+					continue;
+			pq.insert(&*it);
+		}
+
+		while (!pq.empty()) {
+			std::list<long> *p = *pq.begin();
+			pq.erase(pq.begin());
+
+			output.push_back(p->front());
+			p->pop_front();
+
+			if (!p->empty())
+					pq.insert(p);
+		}
+	}
+
+
+	void Rank::top5rank(list<long>& output, list<list<long> > &result){
+
+	}
+
+

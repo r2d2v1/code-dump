@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,com.google.gdt.eclipse.suite,1.1.2.v200910131704,"com.google.gdt.eclipse.suite",1265309571074
+started,bundle,com.google.gwt.eclipse.core,1.1.2.v200910131704,"com.google.gwt.eclipse.core",1265309571082
+os,sysinfo,,,"linux",1265309571104
+arch,sysinfo,,,"x86",1265309571104
+ws,sysinfo,,,"gtk",1265309571104
+locale,sysinfo,,,"en_US",1265309571104
+processors,sysinfo,,,"2",1265309571105
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1265309571105
+java.runtime.version,sysinfo,,,"1.6.0_16-b01",1265309571105
+java.specification.name,sysinfo,,,"Java Platform API Specification",1265309571105
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1265309571105
+java.specification.version,sysinfo,,,"1.6",1265309571105
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1265309571105
+java.version,sysinfo,,,"1.6.0_16",1265309571105
+java.vm.info,sysinfo,,,"mixed mode, sharing",1265309571105
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1265309571105
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1265309571105
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1265309571105
+java.vm.specification.version,sysinfo,,,"1.0",1265309571105
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1265309571105
+java.vm.version,sysinfo,,,"14.2-b01",1265309571105
+started,bundle,org.eclipse.mylyn.context.core,3.3.0.v20091015-0500-e3x,"org.eclipse.mylyn.context.core",1265309571717
+started,bundle,org.eclipse.mylyn.commons.ui,3.3.0.v20091015-0500-e3x,"org.eclipse.mylyn.commons.ui",1265309571838
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1265309572073
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1265309572127

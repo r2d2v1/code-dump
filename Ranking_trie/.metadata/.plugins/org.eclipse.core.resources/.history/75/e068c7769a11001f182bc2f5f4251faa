@@ -1,0 +1,87 @@
+/*
+ * Rank.cpp
+ *
+ *  Created on: Feb 4, 2010
+ *      Author: vijay
+ */
+#include "Rank.h"
+
+	Rank::Rank(){
+		string rankFile;
+		rankFile.append("/home/vijay/workplace/Resources/ranking.txt");
+		if(existFile(rankFile)){
+			readBin(rankList,rankFile);
+		}
+	}
+	Rank::~Rank(){}
+
+	void Rank::merge_sorted_lists(list<long> output, list<list<long> > &input){
+
+		multimap<long,list<long>*, greater<long> > pq;
+		multimap<long,list<long>*, greater<long> >::iterator pqIter;
+
+		list<long> tmp;
+		list<long>::iterator tmpIter;
+
+		for(list<list<long> >::iterator it = input.begin();it != input.end(); it++)
+		{
+			if (it->empty())
+					continue;
+			tmp=*it;
+			tmpIter=tmp.begin();
+			pq.insert(pair<long,list<long>* >(rankList[*tmp.begin()],&*it));
+		}
+
+		while (!pq.empty()) {
+			pqIter=pq.begin();
+
+			std::list<long> *p = pqIter->second;
+			pq.erase(pq.begin());
+
+			output.push_back(p->front());
+			p->pop_front();
+
+			if (!p->empty())
+					tmpIter=p->begin();
+					pq.insert(pair<long,list<long>* >(rankList[*tmpIter],p));
+		}
+	}
+
+
+	void Rank::top5rank(list<long>& output, list<list<long> > &result){
+
+		int counter=0;
+		multimap<long,list<long>*, greater<long> > pq;
+		multimap<long,list<long>*, greater<long> >::iterator pqIter;
+
+		list<long> tmp;
+		list<long>::iterator tmpIter;
+
+		for(list<list<long> >::iterator it = input.begin();it != input.end(); it++)
+		{
+			if (it->empty())
+					continue;
+			tmp=*it;
+			tmpIter=tmp.begin();
+			pq.insert(pair<long,list<long>* >(rankList[*tmp.begin()],&*it));
+		}
+
+		while (!pq.empty()) {
+			counter++;
+			pqIter=pq.begin();
+
+			std::list<long> *p = pqIter->second;
+			pq.erase(pq.begin());
+
+			output.push_back(p->front());
+			p->pop_front();
+
+			if (!p->empty())
+					tmpIter=p->begin();
+					pq.insert(pair<long,list<long>* >(rankList[*tmpIter],p));
+		}
+	}
+
+	}
+
+

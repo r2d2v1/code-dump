@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.mylyn.monitor.ui,3.3.0.v20091015-0500-e3x,"org.eclipse.mylyn.monitor.ui",1265157280278
+started,bundle,org.eclipse.mylyn.tasks.ui,3.3.0.v20091015-0500-e3x,"org.eclipse.mylyn.tasks.ui",1265157280279
+started,bundle,org.eclipse.mylyn.team.ui,3.3.0.v20091015-0500-e3x,"org.eclipse.mylyn.team.ui",1265157280279
+started,bundle,org.tigris.subversion.clientadapter,1.6.4.1,"org.tigris.subversion.clientadapter",1265157280279
+started,bundle,org.tigris.subversion.subclipse.core,1.6.5,"org.tigris.subversion.subclipse.core",1265157280279
+started,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1265157280279
+started,bundle,com.google.appengine.eclipse.core,1.1.2.v200910131704,"com.google.appengine.eclipse.core",1265157280280
+started,bundle,com.google.appengine.eclipse.sdkbundle,1.2.6.v200910131704,"com.google.appengine.eclipse.sdkbundle",1265157280280
+started,bundle,com.google.gdt.eclipse.core,1.1.2.v200910131704,"com.google.gdt.eclipse.core",1265157280280
+started,bundle,com.google.gdt.eclipse.platform.shared,1.1.2.v200910131704,"com.google.gdt.eclipse.platform.shared",1265157280280
+started,bundle,com.google.gdt.eclipse.suite,1.1.2.v200910131704,"com.google.gdt.eclipse.suite",1265157280280
+started,bundle,com.google.gwt.eclipse.core,1.1.2.v200910131704,"com.google.gwt.eclipse.core",1265157280281
+started,bundle,com.google.gwt.eclipse.sdkbundle.linux,1.7.1.v200909221731,"com.google.gwt.eclipse.sdkbundle.linux",1265157280281
+os,sysinfo,,,"linux",1265157280283
+arch,sysinfo,,,"x86",1265157280283
+ws,sysinfo,,,"gtk",1265157280283
+locale,sysinfo,,,"en_US",1265157280283
+processors,sysinfo,,,"2",1265157280284
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1265157280284
+java.runtime.version,sysinfo,,,"1.6.0_16-b01",1265157280284
+java.specification.name,sysinfo,,,"Java Platform API Specification",1265157280284
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1265157280284
+java.specification.version,sysinfo,,,"1.6",1265157280284
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1265157280284
+java.version,sysinfo,,,"1.6.0_16",1265157280284

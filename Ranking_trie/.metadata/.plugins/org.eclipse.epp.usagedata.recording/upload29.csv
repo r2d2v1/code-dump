@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191090522
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191104314
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265191113308
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265191113478
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265191114611
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1265191114801
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1265191117542
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1265191127535
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1265191128408
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1265191134230
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.copy",1265191142412
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1265191143289
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265191144819
+error,log,,,"Error logged from Debug Core: ",1265191149706
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191155871
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191196840
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265191213741
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265191219260
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265191226016
+error,log,,,"Error logged from Debug Core: ",1265191230416
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191233990
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191259143
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1265191266714
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191268834
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1265191279213

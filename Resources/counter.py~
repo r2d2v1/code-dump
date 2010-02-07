@@ -1,0 +1,19 @@
+import random
+fopen=open("recordList.txt","r")
+fout=open("ranking.txt","w")
+count=0
+for line in fopen.readlines():
+	count=count+1
+print count
+ranks=range(count)
+random.shuffle(ranks)
+
+#out.writelines(ranks)
+for i in ranks:
+	print i
+	fout.write((i+"\n")
+fout.close()
+fopen.close()
+	
+
+

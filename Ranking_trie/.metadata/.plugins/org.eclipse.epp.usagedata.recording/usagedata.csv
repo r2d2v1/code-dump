@@ -1,0 +1,8 @@
+what,kind,bundleId,bundleVersion,description,time
+stopped,bundle,org.tigris.subversion.subclipse.graph,1.0.7,"org.tigris.subversion.subclipse.graph",1265436192838
+stopped,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1265436192838
+stopped,bundle,org.tigris.subversion.subclipse.ui,1.6.5,"org.tigris.subversion.subclipse.ui",1265436192838
+stopped,bundle,com.google.appengine.eclipse.sdkbundle,1.2.6.v200910131704,"com.google.appengine.eclipse.sdkbundle",1265436192873
+stopped,bundle,com.google.appengine.eclipse.core,1.1.2.v200910131704,"com.google.appengine.eclipse.core",1265436192873
+stopped,bundle,com.google.gdt.eclipse.core,1.1.2.v200910131704,"com.google.gdt.eclipse.core",1265436192873
+stopped,bundle,com.google.gdt.eclipse.platform,1.1.2.v200910131704,"com.google.gdt.eclipse.platform",1265436192892
