@@ -1,0 +1,215 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% Vijay's resume
+%%   - based off work by Michael DeCorte 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% The following code sets up the document formatting
+%%
+
+%this assumes that res_yy.sty is in some path
+\documentstyle[hyperref, margin, line]{res_yy}
+
+\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\voffset}{-0.30in}
+\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+
+\renewcommand{\namefont}{\LARGE\emph}
+
+%%
+%% The following code defines some macros for terms which have raised font
+%% (ie 4\fourth would result 4th with the 'th' raised (superscripted)
+%%
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+%%
+%% starting the actual document
+%%
+
+\begin{document}
+
+%the name in big fonts at the top of resume
+%this is left aligned
+\name{Vijay Rajakumar}
+
+%this is right aligned
+\address{16 Wintersweet Way, Irvine, CA 92612 | \href{mailto:rvijax@gmail.com}{rvijax@gmail.com} | (949) 394-0397 | \htmladdnormallink{www.vijayrajakumar.com}{http://vijayrajakumar.com}}
+
+\begin{resume}
+
+%%latex vijay_resume.tex
+%%dvipdf vijay_resume.dvi aa.pdf
+%% This section of code is inelegant, but I'm too lazy to fix it
+%%
+\section{\textsc{Personal \newline Profile}}
+My interests are in building fast and scalable information retrieval systems. I am currently the lead engineer at Bimaple, an UC Irvine based search-as-a-service startup. Previously, I was a graduate student in the Information Systems Group at UC Irvine. The most impressive thing that I have built so far is \htmladdnormallink{www.omniplaces.com}{http://omniplaces.com}. Besides Google Local, it is the only location based instant typo tolerant search engine on 17M US business listings on the web!  
+
+\section{\textsc{Education}}
+
+\textbf{University of California -Irvine} \hfill Sep 2008 - May 2010 \\
+MS in Computer Science \hfill GPA: 3.69/4.0\\
+Thesis: Interactive Query Suggestion.\newline Adviser: Prof. Chen Li\newline\newline
+\textbf{SSN College of Engineering, Anna University-India} \hfill May 2004 - July 2008 \\ 
+Bachelor of Engineering(\textit{Honors}) in Computer Science and Engineering \hfill69\%(no GPA system)\\
+
+%%Developed tools in c++ and python for managing simulations over clusters.
+%% the meat of the resume starts now
+%%
+
+\begin{formatb}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+%%\section{\textsc{Professional \newline Experience}}
+\section{\textsc{Experience}}
+\employer{\textbf{Bimaple Technology Inc.}}
+\title{Software Engineer}
+\location{Irvine, CA, (\htmladdnormallink{www.bimaple.com}{http://www.bimaple.com/product})}\dates{May 2010 - Present}
+
+\begin{position}
+Engineering lead at a three person tech startup started by UC Irvine Prof. Chen Li. Designed and built 4 iterations of a high performance instant search service product. Highlights are\\
+a. Built from ground-up an in-memory instant typo-tolerant search engine in C++.\\
+b. Optimized the engine for a mobile, location based application, leading to the first paying customer.\\
+c. Designed and implemented a method to perform high throughput real-time sub-second index updates right into the search serving platform.\\  
+d. Extended the above into a search-as-a-service product. (\htmladdnormallink{www.bimaple.com/product}{http://www.bimaple.com/product}). 
+\end{position}
+
+\employer{\textbf{Information Systems Group,UCI}}
+\title{Graduate Student}
+\location{Advisor: Prof.Chen Li, UCI}\dates{Jul 2009 - May 2010}
+\begin{position}
+\textit{iPubmed -} Designed and built Fast Interactive Query Suggestion in search engines . Novel Trie based In-Memory Search Index structure serving search queries from a C++ http server. (\htmladdnormallink{ipubmed.ics.uci.edu}{http://ipubmed.ics.uci.edu})\\
+\textit{Relevant courses}
+Database Management, Information Retrieval, Analysis of Algorithms, Machine Learning, Image Understanding, Multimedia Systems Design, Scientific Computing, Probablistic Learning.
+\end{position}
+
+\employer{\textbf{Waran Research Foundation}}
+\title{Programmer, Part-Time}
+\location{Chennai, India, \htmladdnormallink{www.warftindia.org}{ http://warftindia.org}}
+\dates{Sep 2006 - July 2008}
+\begin{position}
+Experience in Parallel Programming in C++ and Linux Cluster Administration.
+\end{position}
+
+%%\employer{\textbf{BluTech Media }}
+%%\title{Self Employed}
+%%\location{Chennai, India}
+%%\dates{ Dec 2007 - July 2008}
+%%\begin{position}
+%%Co-Founded with 3 other friends, to provide Bluetooth Proximity Marketing services for local market. Designed and implemented Bluetooth Push %%Server using Python.\newline
+%%\end{position}
+
+%%
+%% We use the same formatting for projects as for work experience
+%% Shown below is the formatting used previously
+%%
+%%  \begin{formatb}
+%%    \employer{l}\title{r}\\
+%%    \location{l}\dates{r}\\
+%%    \body\\
+%%  \end{formatb}
+%%
+%% 
+%%  Note that \location is now being used for non-location information
+%%
+\begin{formatb}
+   \body\\
+\end{formatb}
+\section{\textsc{Technical Skills}}
+\begin{tabular}{ l l }
+\textit{Languages:}&C, C++ (STL,Boost), Python, Javascript  (in order of expertise) \\
+\textit{Tools:}&UNIX, AWS, cmake, libevent, pthreads, gdb, kafka, hadoop\\
+\end{tabular}\\
+I do not have any language or tool preference, although I learnt programming in C on UNIX. I am constantly looking for new hacks and I can pick up new ones rather quickly. \\
+%%\section{\textsc{Research/ \newline Projects}}
+%%\begin{formatb}
+ %% \employer{l}\title{r}\\
+  %%\body\\
+%%\end{formatb}
+
+%%\employer{\textbf{Improving PubMed search using Topic Models}}
+%%\title{Python}
+%%\begin{position}
+%%I implemented the following search engine components in Python: Tokeniser, Stemmer, Topic based indexing and browsing system of medical publications in PubMed.
+%%\end{position}
+
+%%\employer{\textbf{Virtual World in HTML5}}
+%%\title{Javascript, AJAX}
+%%\begin{position}
+%%I designed and implemented a game-like tool to define real world building maps. Rendering the given map in 3D for navigation and leaving post-it like tags using only HTML5 over http.
+%%\end{position}
+%%\employer{\textbf{News has no influence on stock prices!}}
+%%\title{Fall 2008}
+%%\begin{position}
+%%Used machine learning and text mining techniques to demonstrate that stock price variances are not co-related to news data.Implemented using %%Python and Matlab.
+%%\end{position}
+
+%%\employer{\textbf{Face Expression Identification}Prof.Max Welling,UCI}
+%%\title{Spring 2009}
+%%\begin{position}
+%%Used Computer Vision and Machine Learning techniques to classify face expression in %%%images. Implemented using Python and Matlab.
+%%\end{position}
+
+%%\employer{\textbf{Spectral Clustering of Website Link Graphs}}
+%%\title{Java, Matlab }
+%%\begin{position}
+%%I implemented the following in Java. A web crawler to parse web documents for links and recursively crawl them
+%%based on specific priority schemes. Then, build a link graph from crawled pages and apply clustering algorithms, to find clusters of webpages.
+%%\end{position}
+
+%%\employer{\textbf{Blind Man's Eye}}
+%%\title{C++ -\textit{Microsoft Imagine Cup}}
+%%\begin{position}
+%%Undergrad Team of 3 project to build a text recognition system using camera on mobile devices, to help the blind people. I implemented the image processing components using C++ and openCV. Project was selected as one of \textit{Top 12 projects from India in Microsoft Imagine Cup'2006}.
+%%\end{position}
+
+%%\begin{formatb}
+  %% \body\\
+%%\end{formatb}
+%%\section{\textsc{Publications}}
+ 
+%%N.Venkateswaran, Vijay Rajakumar et al.\textbf{ MMINi-DASS - Large-scale brain circuit construction and simulation for interconnectivity prediction.\textit{Neuroinformatics 2008}}
+%%Vijay Rajakumar, PrasannaKumar, SureshKumar.\textbf{Interconnectedness of Consciousness and Activities Performed Explained by Quantum Physics.}%%%Toward a Science of Consciousness 2008, Tucson,Arizona.
+
+\begin{formatb}
+\body\\
+\end{formatb}
+\section{\textsc{Open Source Activities}}
+\textit{Google Person Finder -} Built instant search module for Google Person Finder project  on the Google App Engine platform. Our team from UC Irvine collaborated with Google.org team and won the third-best-project prize in Random Hacks of Kindness (RhoK) in Chicago'10. (\htmladdnormallink{code.google.com/p/googlepersonfinder}{http://code.google.com/p/googlepersonfinder})\\
+\textit{Apache Kafka -} Wrote C++ wrapper and bug fixes to python wrapper for Apache Kafka message queue.(\htmladdnormallink{www.github.com/rvijax}{http://github.com/rvijax}) \\
+\textit{Microsoft Imagine Cup 2006 -} Built a text recognition system using mobile phone cameras to help the blind people read. Our undergrad team of 3 was selected as one of top 12 projects in India from over 30,000 submissions.\\
+
+%%
+%% This section could also use more formatting, but looks ok, as is
+%%
+%\section{\textsc{Qualifications}}
+
+%\emph{Programming Languages}: \Cplusplus, \CSharp, Cg, HLSL, ARB assembly, SML, OCaML, PHP, MySQL, Java, Python, Perl, MIPS assembly
+
+%\emph{Libraries and Tools}: Vim, STL, DirectX, OpenGL, \LaTeX, GIMP, Adobe Suite, Macromedia Suite, MatLab, Mathematica, Microsoft Visual Studio, GCC, GDB
+
+%%
+%% Note that we're redefining the formatting
+%% We only have one row of information now, instead of two
+%%
+%%
+%% Nothing special here, just a normal table
+%%
+
+%\section{\textsc{Relevent \newline Course Work}}
+
+\end{resume}
+\end{document}

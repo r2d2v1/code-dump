@@ -1,0 +1,63 @@
+VIJAY RAJAKUMAR
+
+16, Wintersweet Way, Irvine, CA 92612
+(949) 394-0397
+rvijax@gmail.com
+http://vijayrajakumar.com
+http://linkedin.com/in/vijayrajakumar
+http://github.com/rvijax
+
+PERSONAL PROFILE
+Startup Engineer with experience in building fast search engines and self-service cloud software. Previously, I studied computer science at UC Irvine. I was part of its Information Systems Group and my research was on Interactive Query Suggestion and Auto-Completion on large data.
+
+EDUCATION
+
+University of California -Irvine 
+MS in Information and Computer Science, 2008 - 2010  
+GPA 3.69/4
+
+SSN College of Engineering, Anna University-India
+BE in Computer Science and Engineering, 2008 
+
+EXPERIENCE
+[1] Bimaple Technology,
+www.bimaple.com
+May 2010 - Present
+Engineering lead in a three person tech startup started by UC Irvine Prof. Chen Li. Designed and built 4 iterations of a high performance instant search service product. Highlights are
+a. Built from ground-up an in-memory instant typo-tolerant search engine in C++.
+b. Optimized the engine for a mobile, location based application, leading to the first paying customer.
+c. Designed and implemented a method to perform real-time sub-second index updates right into the search serving platform.   
+d. Extended the above into a search-as-a-service product. www.omniplaces.com, www.bimaple.com/product
+
+[2] Information Systems Group, University of California-Irvine
+Graduate Researcher, Advisor: Prof.Chen Li
+July 2009 - April 2010
+Designed and built Fast Interactive Query Suggestion in search engines (http://ipubmed.ics.uci.edu). 
+Novel In-Memory Search Index structure served from a custom C++ web server.
+
+[3] Waran Research Foundation, India
+Student Programmer
+July 2006 - July 2008
+Experience in Parallel Programming in C++ and Linux Cluster Administration.
+
+TECHNICAL SKILLS
+Languages:    C, C++ (STL, Boost), Python, Javascript
+Tools:        UNIX, AWS, cmake, gdb, libevent, pthreads, Message Queues, Map Reduce. 
+I do not have any language or tool preference, although I learnt programming in C on UNIX. I am constantly looking for new hacks and I can pick up new ones rather quickly.
+
+PROJECTS
+
+OPEN SOURCE
+[1] Built instant search module for Google Person Finder project(http://code.google.com/p/googlepersonfinder) on the Google App Engine platform. Our team from UC Irvine won the third-best-project prize in Random Hacks of Kindness (RhoK) in Chicago'10. 
+[2] Contribute to C++, python wrapper for Apache Kafka message queue. Code at http://github.com/rvijax
+[3] For Microsoft Imagine Cup 2006, built a text recognition system using mobile phone cameras to help the blind people read. Our undergrad team of 3 was selected as one of top 12 projects in India from over 30,000 submissions.
+
+RESEARCH/COURSEWORK
+[4] Improving medical search using Topic Models. Python, Javascript
+[5] Search Engine from the ground up. C++
+[6] Spectral Clustering of Website Maps. Python
+[7] Pagerank of wikipedia using Map Reduce. Python
+
+ACTIVITIES
+1. Member of Irvine bike club.
+2. Member of East West cultural center in Los Angeles. Take part in weekly group yoga and mediation.
